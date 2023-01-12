@@ -1,0 +1,152 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+:root{
+  --mainCol:#087f5b;
+}
+
+.mgTopBott{
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+}
+body{
+  border-bottom: 10px solid var(--mainCol);
+}
+.container{
+  width:70%;
+  margin: auto ;
+}
+ul{
+  list-style-type: none;
+}
+img{
+  max-width: 100%;
+  height: fit-content;
+  border-radius:20px;
+}
+.head-main{
+  font-size: 36px;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+header{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(auto,1fr));
+  grid-column-gap:40px;
+}
+.design{
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: column;
+}
+.head-design{
+  font-size: 40px;
+}
+.design-des{
+  font-size: 22px;
+  line-height: 1.6;
+  max-width:600px;
+}
+.btn{
+  border: none;
+  padding: 10px 15px;
+  max-width: 200px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 26px;
+  border-radius: 30px;
+  color: white;
+  text-transform: capitalize;
+  background-color: var(--mainCol);
+}
+.chair-sepcial-content{
+  display: grid;
+  grid-template-columns:repeat(3,minmax(auto,1fr));
+  grid-column-gap:30px;
+}
+.chair-sepcial-content .icon{
+  font-size :26px;
+}
+.chair-head{
+  font-size:23px;
+  padding: 20px 0px;
+}
+.chair-des{
+  line-height: 1.6;
+  font-size: 20px;
+}
+.customers{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--mainCol);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+.customers-content{
+  padding: 20px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+.head-cust{
+  padding: 20px 0px;
+}
+.customers-des{
+line-height: 1.6;
+font-size: 18px;
+}
+.best-chair-content{
+  display: grid;
+  grid-template-columns: repeat(3,minmax(auto,1fr));
+  grid-column-gap: 30px;
+}
+.best-chair-sec{
+  box-shadow:0 20px 30px 0 rgb(0 0 0 / 7%);
+  padding:30px;
+}
+.best-chair-sec img{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+}
+.best-chair-sec-head,ul,ul li{
+  padding: 10px;
+}
+.best-chair-sec ul li{
+  font-size: 16px;
+}
+.best-chair-sec ul li i{
+  margin-right:10px;
+}
+.best-chair-sec ul li span{
+  font-size: 16px;
+}
+.best-chair-sec label{
+  font-weight:bold;
+  font-size: 28px;   
+  margin-right: 20px;
+}
+.best-chair-sec button {
+    font-size: 18px;
+    
+}
+footer{
+  padding: 20px;
+}
+@media  (max-width:944px){
+  header,.chair-sepcial-content,.best-chair-content{
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  } 
+  .customers{
+    flex-direction: column;
+  }
+  footer{
+    line-heigth:1.3;
+  }
+}

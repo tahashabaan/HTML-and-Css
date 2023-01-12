@@ -1,0 +1,35 @@
+.pagination{
+   width: 40%;
+   margin: 200px auto; 
+}
+.pagination ul {
+  display: flex;
+  list-style-type:  none;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagination ul li .btn{
+  border: 1px solid #087f5b;
+  outline: none;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   background-color: transparent;
+   color: #087f5b;
+}
+.pagination ul li .btn:hover,.pagination ul li a:hover{
+  background-color: #087f5b;
+  color:white;
+}
+.pagination ul a,.pagination ul .btn{
+  transition: background 0.2s;
+}
+.pagination ul li a{
+ display: block;
+ padding: 7px 10px;
+ text-decoration:none;
+ border-radius: 50%;
+ font-size: 22px;
+ color:black;
+
+}

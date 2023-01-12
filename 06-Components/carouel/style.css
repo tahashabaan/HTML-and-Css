@@ -1,0 +1,23 @@
+.carouel{
+  width: 800px;
+  margin: 100px auto;
+  display: flex;
+  background-color: #087f5b;
+  border-radius: 10px;
+  color: white;
+  padding: 0px 40px;
+}
+img{
+  width: 100%;
+  max-height:auto;
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+.block-des{
+  font-size: 26px;
+  line-height: 1.4;
+  font-size: 16px;
+} 
+
+.logo{
+  padding-bottom: -10px;}
